@@ -1,0 +1,8 @@
+{
+  "name": "LegalSaathi - Constitutional Literacy & Civic Safety",
+  "description": "Empowering citizens with plain-language Indian legal rights, step-by-step statutory safety guidance, evidence checklists, and direct official helplines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

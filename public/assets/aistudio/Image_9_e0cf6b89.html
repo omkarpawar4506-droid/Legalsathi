@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#94f2f7", "on-tertiary-container": "#f67d27", "outline": "#74777f", "on-primary-fixed-variant": "#2e476f", "surface-dim": "#d2daeb", "secondary": "#00696d", "on-tertiary-fixed": "#321200", "on-primary-fixed": "#001b3d", "error": "#ba1a1a", "on-secondary": "#ffffff", "on-surface-variant": "#44474e", "on-primary-container": "#87a0cd", "outline-variant": "#c4c6cf", "surface": "#f8f9ff", "primary-fixed-dim": "#aec7f7", "on-error": "#ffffff", "inverse-surface": "#29313d", "secondary-fixed": "#94f2f7", "surface-container-highest": "#dbe3f3", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "surface-tint": "#465f88", "primary-container": "#1b365d", "secondary-fixed-dim": "#77d5da", "inverse-primary": "#aec7f7", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#ffb68c", "tertiary-container": "#5b2700", "on-background": "#141c28", "inverse-on-surface": "#ebf1ff", "surface-container-high": "#e1e8f9", "on-secondary-fixed-variant": "#004f52", "tertiary-fixed": "#ffdbc9", "primary-fixed": "#d6e3ff", "surface-container-low": "#eff3ff", "error-container": "#ffdad6", "on-secondary-container": "#007074", "primary": "#002046", "on-secondary-fixed": "#002021", "on-surface": "#141c28", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#753400", "on-primary": "#ffffff", "surface-variant": "#dbe3f3", "surface-container": "#e6eeff", "on-tertiary": "#ffffff", "tertiary": "#3a1600" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "caption": ["Inter"], "title-md": ["Inter"], "headline-lg-mobile": ["Inter"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,54,93,0.04)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Open civic menu drawer" class="min-w-[44px] min-h-[44px] w-11 h-11 rounded-lg flex items-center justify-center text-primary active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="LegalSaathi Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwHzuA_XeSxsYPJi_83Q1Nmmp2dJ1EuFbeo450K8aSIqoLeM4iR8_8UokogwfD0RwR2z2juEqt3PZntv0pg-5S5_LqymFNNIwuVUZocypQjcb6chWQ6BCgUF2crDuCYtlCrdU-1kYWt6IJyXWFTUboa9mkgXO-fn7KoJ_cBJnm6CRz7jSxBLsfjiusLufn547mI2SoSmxWoIYNqGRPVrIaqNGKVcMAs0q2dVaHx6mFVSr6v_8ZSSRXoSU8"/><div class="flex flex-col"><span class="font-label-lg text-primary leading-tight tracking-tight">LegalSaathi</span><span class="font-caption text-secondary font-medium leading-none">न्याय &amp; सुरक्षा</span></div></div></div><div class="flex items-center gap-space-xs"><div class="relative flex items-center"><label class="sr-only" for="lang-select">Select Language</label><select aria-label="Select Language" class="h-9 pl-space-xs pr-6 rounded-lg bg-surface-container-low text-on-surface font-label-md appearance-none focus:outline-none focus:ring-1 focus:ring-secondary min-h-[44px]" id="lang-select"><option value="en">EN</option><option value="hi">हिंदी</option><option value="mr">मराठी</option></select><span class="material-symbols-outlined text-[16px] text-outline absolute right-1 pointer-events-none">arrow_drop_down</span></div><a aria-label="Emergency SOS 112" class="min-h-[44px] px-space-xs py-1 rounded-full bg-error-container text-on-error-container flex items-center gap-1 font-label-md active:scale-95 transition-transform" href="tel:112"><span class="material-symbols-outlined text-[16px]">sos</span><span>112</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full space-y-space-md">
+<!-- Emergency Response Ribbon (Civic Safety Touchpoint) -->
+<section class="bg-error-container text-on-error-container rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-error">fmd_bad</span>
+<span class="font-label-md tracking-tight uppercase">Emergency Immediate First-Aid</span>
+</div>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+</div>
+<p class="font-body-sm mt-1 text-on-error-container/90">
+      In immediate danger or physical threat? Reach state emergency networks instantly:
+    </p>
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm">
+<a class="flex items-center justify-center gap-1.5 py-2 px-space-xs rounded-lg bg-error text-on-error font-label-md shadow-sm active:scale-95 transition-transform min-h-[44px]" href="tel:112">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Police / EMS: 112</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-2 px-space-xs rounded-lg bg-surface text-primary font-label-md shadow-sm active:scale-95 transition-transform min-h-[44px]" href="tel:1930">
+<span class="material-symbols-outlined text-[18px] text-error">shield</span>
+<span>Cyber Crime: 1930</span>
+</a>
+</div>
+</section>
+<!-- Hero Reassurance Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption font-semibold">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+<span>Constitutional Literacy For All</span>
+</div>
+<h1 class="font-headline-lg-mobile text-primary tracking-tight">
+        Understand Your Rights. Know Your Next Step.
+      </h1>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+        Simple legal information, practical statutory guidance, and trusted resources to help you make dignified, informed decisions.
+      </p>
+</div>
+<!-- Search Module -->
+<div class="space-y-space-xs">
+<div class="relative flex items-center bg-surface-container-low rounded-xl focus-within:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-outline text-[22px] ml-space-md">search</span>
+<input class="w-full bg-transparent py-3.5 pl-space-xs pr-space-md text-on-surface font-body-sm placeholder:text-outline focus:outline-none min-h-[48px]" id="legal-search-input" placeholder="Search a legal topic or describe your problem..." type="text"/>
+<button aria-label="Trigger Legal Search" class="mr-1.5 px-3 py-2 bg-primary text-on-primary rounded-lg font-label-md active:scale-95 transition-transform min-h-[40px] flex items-center" id="search-action-btn">
+          Search
+        </button>
+</div>
+<!-- Quick query tags -->
+<div class="flex items-center gap-1.5 overflow-x-auto pt-1 pb-0.5 no-scrollbar">
+<span class="font-caption text-outline whitespace-nowrap">Suggested:</span>
+<button class="query-pill px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption whitespace-nowrap active:bg-secondary-container transition-colors">
+          Cyber Fraud
+        </button>
+<button class="query-pill px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption whitespace-nowrap active:bg-secondary-container transition-colors">
+          Defective Product
+        </button>
+<button class="query-pill px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption whitespace-nowrap active:bg-secondary-container transition-colors">
+          FIR Process
+        </button>
+<button class="query-pill px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption whitespace-nowrap active:bg-secondary-container transition-colors">
+          Tenant Rights
+        </button>
+</div>
+</div>
+<!-- Primary Action Split -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<a class="flex items-center justify-center gap-1.5 py-3 px-space-xs rounded-lg bg-primary text-on-primary font-label-lg shadow-sm active:scale-95 transition-all text-center min-h-[48px]" href="#topics-grid">
+<span>Explore Topics</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-3 px-space-xs rounded-lg bg-surface-container text-primary font-label-lg active:bg-surface-container-high transition-colors text-center min-h-[48px]" href="#helpline-directory">
+<span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span>
+<span>Official Helplines</span>
+</a>
+</div>
+</section>
+<!-- Interactive Civic Flow: How LegalSaathi Works -->
+<section class="bg-surface-container-low rounded-xl p-space-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-caption uppercase tracking-wider text-secondary font-semibold">Civic Framework</span>
+<h2 class="font-title-md text-primary">How LegalSaathi Works</h2>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="space-y-space-sm">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-lg flex items-center justify-center shrink-0">
+          1
+        </div>
+<div class="min-w-0">
+<h3 class="font-label-lg text-primary">Choose Your Situation</h3>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Select a category or describe what occurred without fearing complex legal terms.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-lg flex items-center justify-center shrink-0">
+          2
+        </div>
+<div class="min-w-0">
+<h3 class="font-label-lg text-primary">Understand In Plain Language</h3>
+<p class="font-body-sm text-on-surface-variant mt-0.5">View your exact legal rights, required evidence checklist, and time limits explained simply.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container font-label-lg flex items-center justify-center shrink-0">
+          3
+        </div>
+<div class="min-w-0">
+<h3 class="font-label-lg text-primary">Connect to Official Portals</h3>
+<p class="font-body-sm text-on-surface-variant mt-0.5">File complaints directly through vetted government systems with no middlemen fees.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Case Mosaic Banner -->
+<section class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-md">
+<div class="relative z-10 space-y-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-semibold uppercase tracking-wider inline-block">Free Citizen Tool</span>
+<h3 class="font-title-md text-on-primary">New to Filing an FIR?</h3>
+<p class="font-body-sm text-on-primary-container">Learn what police must record under BNS Section 173 and what steps to take if an officer refuses registration.</p>
+<div class="pt-2">
+<button class="px-3.5 py-2 rounded-lg bg-surface text-primary font-label-md active:bg-surface-dim transition-colors flex items-center gap-1.5 min-h-[44px]">
+<span>View FIR Checklist</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full bg-primary-container opacity-60 pointer-events-none"></div>
+</section>
+<!-- Browse By Topic Section -->
+<section class="space-y-space-sm" id="topics-grid">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-caption text-secondary font-semibold uppercase tracking-wider">Know Your Protections</span>
+<h2 class="font-headline-sm text-primary">Browse By Topic</h2>
+</div>
+<span class="font-caption text-outline">6 Core Modules</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- 1. Online Fraud & Cybercrime -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="cyber">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">phonelink_lock</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption font-semibold">
+            Active Guide
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Online Fraud &amp; Cybercrime</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Immediate steps for unauthorized UPI debit, fake lottery links, SIM card hijacking, and freezing funds via the 1930 portal within the golden hour.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">UPI Fraud</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">SIM Swap</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">1930 Hotline</span>
+</div>
+</div>
+</article>
+<!-- 2. Harassment & Personal Safety -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="safety">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption font-semibold">
+            Active Guide
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Harassment &amp; Personal Safety</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Navigating POSH complaints at work, stalking evidence preservation, domestic violence remedies, and emergency police response rights.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">POSH Act</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Zero FIR</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Women Helpline 1091</span>
+</div>
+</div>
+</article>
+<!-- 3. Consumer Rights -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="consumer">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption font-semibold">
+            Active Guide
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Consumer Rights &amp; Claims</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            What to do when e-commerce denies refunds, dealing with defective gadgets, and filing an online complaint through e-Daakhil without a lawyer.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Refund Refusal</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">e-Daakhil</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">NCH 1915</span>
+</div>
+</div>
+</article>
+<!-- 4. Employment & Labor Rights -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="labor">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption font-medium">
+            Sample Preview
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Employment &amp; Labor Rights</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Unlawful contract termination, minimum wage statutes, gratuity dispute timelines, and formal notice recovery for salaried and contract workers.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Severance</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Gratuity</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Notice Periods</span>
+</div>
+</div>
+</article>
+<!-- 5. Family & Personal Rights -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="family">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption font-medium">
+            Sample Preview
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Family, Property &amp; Succession</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Daughters' coparcenary property shares, mutual consent divorce procedural steps, elder maintenance laws, and basic will validation.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Succession</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Maintenance</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Parental Care</span>
+</div>
+</div>
+</article>
+<!-- 6. Legal Aid & NALSA -->
+<article class="topic-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-topic="nalsa">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-caption font-semibold">
+            Active Directory
+          </span>
+</div>
+<div class="mt-space-sm space-y-1">
+<h3 class="font-title-md text-primary flex items-center justify-between">
+<span>Free Legal Aid &amp; NALSA Services</span>
+<span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
+</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Entitlement criteria under Legal Services Authorities Act Section 12 for free state advocates for women, children, workers, and undertrials.
+          </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Free Advocate</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Section 12</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-caption">Lok Adalat</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Direct Resource Directory -->
+<section class="space-y-space-sm" id="helpline-directory">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-caption text-secondary font-semibold uppercase tracking-wider">Zero Middlemen</span>
+<h2 class="font-headline-sm text-primary">Official Government Directory</h2>
+</div>
+<span class="material-symbols-outlined text-outline">assured_workload</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Cyber Crime -->
+<a class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container-low transition-colors min-h-[48px]" href="https://cybercrime.gov.in" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-primary truncate">National Cyber Crime Portal</div>
+<div class="font-caption text-on-surface-variant truncate">cybercrime.gov.in • Helpline 1930</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0">
+<span class="font-caption font-semibold">Portal</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</div>
+</a>
+<!-- Consumer Helpline -->
+<a class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container-low transition-colors min-h-[48px]" href="https://consumerhelpline.gov.in" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">support</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-primary truncate">National Consumer Helpline (NCH)</div>
+<div class="font-caption text-on-surface-variant truncate">consumerhelpline.gov.in • Dial 1915</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0">
+<span class="font-caption font-semibold">Portal</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</div>
+</a>
+<!-- NALSA Free Aid -->
+<a class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container-low transition-colors min-h-[48px]" href="https://nalsa.gov.in" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-primary truncate">National Legal Services Authority</div>
+<div class="font-caption text-on-surface-variant truncate">nalsa.gov.in • 15100 (Free Aid Toll-Free)</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0">
+<span class="font-caption font-semibold">Portal</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</div>
+</a>
+<!-- ERSS 112 -->
+<a class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container-low transition-colors min-h-[48px]" href="https://112.gov.in" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">emergency</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-primary truncate">ERSS Single Emergency Response</div>
+<div class="font-caption text-on-surface-variant truncate">112.gov.in • Police, Fire, Ambulance</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0">
+<span class="font-caption font-semibold">Portal</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Interactive Citizen Quick-Check Module -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">fact_check</span>
+<h3 class="font-title-md text-primary">Need Instant Orientation?</h3>
+</div>
+<p class="font-body-sm text-on-surface-variant">
+      Select your current situation to see the statutory timeline and primary agency responsible:
+    </p>
+<div class="grid grid-cols-2 gap-space-xs" id="quick-scenario-selectors">
+<button class="scenario-btn active py-2.5 px-space-xs rounded-lg bg-primary text-on-primary font-label-md text-center transition-colors min-h-[44px]" data-type="upi">
+        Lost money via UPI
+      </button>
+<button class="scenario-btn py-2.5 px-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-center transition-colors min-h-[44px]" data-type="refuse">
+        Seller refused return
+      </button>
+</div>
+<!-- Dynamic scenario advice card -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-space-xs" id="scenario-card">
+<div class="flex items-center justify-between">
+<span class="font-caption font-semibold text-secondary uppercase" id="scenario-tag">Action Window: 0 - 2 Hours</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+</div>
+<h4 class="font-label-lg text-primary" id="scenario-heading">Call 1930 &amp; Alert Bank Immediately</h4>
+<p class="font-body-sm text-on-surface-variant" id="scenario-desc">
+        The cyber nodal officer can place a temporary debit lien on the recipient bank account before cash is withdrawn at an ATM. Note transaction reference (UTR) numbers.
+      </p>
+</div>
+</section>
+<!-- Hackathon & Civic Disclaimers -->
+<section class="rounded-xl bg-surface-container-low p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md">Open Public Civic Project</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="lang-pill px-2 py-0.5 rounded-full bg-primary text-on-primary font-caption">EN</button>
+<button class="lang-pill px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption">HI</button>
+<button class="lang-pill px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption">MR</button>
+</div>
+</div>
+<p class="font-caption text-on-surface-variant leading-relaxed">
+      LegalSaathi provides public legal awareness, rights simplification, and direct official redirection. It does not constitute formal judicial attorney advice nor do we accept payments on behalf of any citizen or agency.
+    </p>
+</section>
+</div>
+<script>
+  (function initLegalSaathi() {
+    // Quick search pill population
+    const searchInput = document.getElementById('legal-search-input');
+    const searchBtn = document.getElementById('search-action-btn');
+    const pills = document.querySelectorAll('.query-pill');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = pill.textContent.trim();
+          searchInput.focus();
+        }
+      });
+    });
+
+    if (searchBtn && searchInput) {
+      searchBtn.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        if (query) {
+          const topics = document.getElementById('topics-grid');
+          if (topics) {
+            topics.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    }
+
+    // Dynamic Scenario Switcher Micro-interaction
+    const scenarios = {
+      upi: {
+        tag: "Action Window: 0 - 2 Hours",
+        heading: "Call 1930 & Alert Bank Immediately",
+        desc: "The cyber nodal officer can place a temporary debit lien on the recipient bank account before cash is withdrawn at an ATM. Note transaction reference (UTR) numbers."
+      },
+      refuse: {
+        tag: "Statutory Term: 30 Days Formal Notice",
+        heading: "Log Complaint On 1915 National Portal",
+        desc: "Under the Consumer Protection Act 2019, unreasonable return denial is an unfair trade practice. Generate a dispute docket number on consumerhelpline.gov.in."
+      }
+    };
+
+    const scenarioBtns = document.querySelectorAll('.scenario-btn');
+    const tagEl = document.getElementById('scenario-tag');
+    const headingEl = document.getElementById('scenario-heading');
+    const descEl = document.getElementById('scenario-desc');
+
+    scenarioBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        scenarioBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+        const key = btn.getAttribute('data-type');
+        if (scenarios[key] && tagEl && headingEl && descEl) {
+          tagEl.textContent = scenarios[key].tag;
+          headingEl.textContent = scenarios[key].heading;
+          descEl.textContent = scenarios[key].desc;
+        }
+      });
+    });
+
+    // Language pills micro-feedback
+    const langPills = document.querySelectorAll('.lang-pill');
+    langPills.forEach(lp => {
+      lp.addEventListener('click', () => {
+        langPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        lp.classList.add('bg-primary', 'text-on-primary');
+        lp.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+  })();
+</script><aside class="mt-space-xl p-space-md rounded-xl bg-surface-container-low text-on-surface-variant font-caption text-center leading-relaxed"><span class="font-semibold text-primary block mb-0.5">Legal Disclaimer (अस्वीकरण)</span>LegalSaathi is a civic legal literacy initiative. Content provided does not substitute professional judicial counsel or advocate representation.</aside></main><a aria-label="Ask LegalSaathi AI Legal Assistant" class="fixed bottom-24 right-4 z-40 flex items-center gap-space-xs px-space-md py-3 rounded-full bg-primary text-on-primary shadow-[0_8px_20px_rgba(0,32,70,0.24)] min-h-[44px] active:scale-95 transition-all" data-path="ask-legalsaathi" href="#"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">smart_toy</span><span class="font-label-lg">Ask LegalSaathi</span></a><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(27,54,93,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 transition-colors text-primary font-bold" data-path="home-hub" href="#"><span class="material-symbols-outlined text-[22px]">balance</span><span class="font-caption mt-0.5">Know Rights</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant transition-colors" data-path="fir-helpline" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-caption mt-0.5">FIR &amp; Safety</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant transition-colors" data-path="schemes-aid" href="#"><span class="material-symbols-outlined text-[22px]">assured_workload</span><span class="font-caption mt-0.5">Legal Aid</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant transition-colors" data-path="profile-bookmarks" href="#"><span class="material-symbols-outlined text-[22px]">folder_shared</span><span class="font-caption mt-0.5">My Desk</span></a></div></nav></body></html>

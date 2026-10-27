@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#94f2f7", "on-tertiary-container": "#f67d27", "outline": "#74777f", "on-primary-fixed-variant": "#2e476f", "surface-dim": "#d2daeb", "secondary": "#00696d", "on-tertiary-fixed": "#321200", "on-primary-fixed": "#001b3d", "error": "#ba1a1a", "on-secondary": "#ffffff", "on-surface-variant": "#44474e", "on-primary-container": "#87a0cd", "outline-variant": "#c4c6cf", "surface": "#f8f9ff", "primary-fixed-dim": "#aec7f7", "on-error": "#ffffff", "inverse-surface": "#29313d", "secondary-fixed": "#94f2f7", "surface-container-highest": "#dbe3f3", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "surface-tint": "#465f88", "primary-container": "#1b365d", "secondary-fixed-dim": "#77d5da", "inverse-primary": "#aec7f7", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#ffb68c", "tertiary-container": "#5b2700", "on-background": "#141c28", "inverse-on-surface": "#ebf1ff", "surface-container-high": "#e1e8f9", "on-secondary-fixed-variant": "#004f52", "tertiary-fixed": "#ffdbc9", "primary-fixed": "#d6e3ff", "surface-container-low": "#eff3ff", "error-container": "#ffdad6", "on-secondary-container": "#007074", "primary": "#002046", "on-secondary-fixed": "#002021", "on-surface": "#141c28", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#753400", "on-primary": "#ffffff", "surface-variant": "#dbe3f3", "surface-container": "#e6eeff", "on-tertiary": "#ffffff", "tertiary": "#3a1600" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "caption": ["Inter"], "title-md": ["Inter"], "headline-lg-mobile": ["Inter" ] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,54,93,0.04)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] w-11 h-11 rounded-lg flex items-center justify-center text-primary active:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="LegalSaathi Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UwHzuA_XeSxsYPJi_83Q1Nmmp2dJ1EuFbeo450K8aSIqoLeM4iR8_8UokogwfD0RwR2z2juEqt3PZntv0pg-5S5_LqymFNNIwuVUZocypQjcb6chWQ6BCgUF2crDuCYtlCrdU-1kYWt6IJyXWFTUboa9mkgXO-fn7KoJ_cBJnm6CRz7jSxBLsfjiusLufn547mI2SoSmxWoIYNqGRPVrIaqNGKVcMAs0q2dVaHx6mFVSr6v_8ZSSRXoSU8"/><h1 class="font-title-md text-primary tracking-tight truncate max-w-[140px]">Guide Detail</h1></div><div class="flex items-center gap-space-xs"><a aria-label="National Cyber Crime Reporting Helpline 1930" class="min-h-[44px] px-space-xs py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center gap-1 font-label-md active:scale-95 transition-transform" href="tel:1930"><span class="material-symbols-outlined text-[16px]">shield</span><span>1930</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-10 space-y-5">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 overflow-x-auto py-1 text-on-surface-variant font-label-md text-label-md">
+<a class="flex items-center gap-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[13px] opacity-40">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Browse Topics</a>
+<span class="material-symbols-outlined text-[13px] opacity-40">chevron_right</span>
+<span class="text-primary font-semibold truncate max-w-[130px]">Consumer Rights</span>
+</nav>
+<!-- Topic Meta Hero Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3 relative overflow-hidden">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+        CPA 2019 Statute
+      </span>
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Verified Guidance</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Consumer Rights &amp; Faulty Services</h2>
+<div class="flex items-center gap-3 mt-1.5 text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          3 min read
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">update</span>
+          Updated Oct 2024
+        </span>
+</div>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm leading-relaxed">
+      A plain-language guide for everyday citizens navigating defective devices, refused e-commerce refunds, unjustified cancellation charges, and misleading advertisements in India.
+    </p>
+<!-- Quick action pill row -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="min-h-[44px] px-3 py-2 rounded-lg bg-tertiary-container text-tertiary-fixed flex items-center justify-center gap-2 font-label-md text-label-md active:scale-98 transition-transform" href="tel:1915">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call NCH: 1915</span>
+</a>
+<button class="min-h-[44px] px-3 py-2 rounded-lg bg-surface-container text-primary flex items-center justify-center gap-2 font-label-md text-label-md active:scale-98 transition-transform" onclick="document.getElementById('checklist-section').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+<span>Evidence Kit</span>
+</button>
+</div>
+</div>
+<!-- Section 1: What Does This Mean? -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">What does this mean?</h3>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm leading-relaxed">
+      Under the <span class="font-semibold text-primary">Consumer Protection Act, 2019</span>, you are legally protected against unfair trade practices and hazardous goods. You possess 6 sovereign consumer rights:
+    </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">health_and_safety</span>
+<span class="font-label-md text-label-md">1. Safety</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Protection from hazardous products &amp; services.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span class="font-label-md text-label-md">2. Information</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Accurate details on purity, price &amp; ingredients.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">interests</span>
+<span class="font-label-md text-label-md">3. Choice</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Assured access to competitive variety &amp; pricing.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+<span class="font-label-md text-label-md">4. Heard</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Guaranteed voice in forums &amp; dispute cells.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+<span class="font-label-md text-label-md">5. Redressal</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Right to compensation, repairs, or full refund.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span class="font-label-md text-label-md">6. Education</span>
+</div>
+<p class="text-on-surface-variant font-caption text-caption">Lifelong access to awareness &amp; civic knowledge.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: What Can You Do? (Action Hierarchy) -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Action Hierarchy</h3>
+</div>
+<span class="text-on-surface-variant font-caption text-caption">4 Guided Steps</span>
+</div>
+<div class="space-y-3">
+<!-- Step 1 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 shrink-0 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">1</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary">Direct Written Notice</h4>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Step 1</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+            Send an email directly to the seller or brand’s grievance officer. Clearly cite the defective order ID, describe the deficiency, and demand resolution within 7-14 days.
+          </p>
+<div class="pt-1 flex items-center gap-1 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[15px] text-secondary">lightbulb</span>
+<span>Always preserve automated ticket numbers &amp; timestamps.</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 shrink-0 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">2</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary">National Consumer Helpline</h4>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Pre-Litigation</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+            Dial toll-free <strong class="text-primary">1915</strong> or submit via web portal. NCH facilitates direct mediation with registered corporate convergence partners without court proceedings.
+          </p>
+<div class="pt-1">
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold hover:underline" href="https://consumerhelpline.gov.in" rel="noopener noreferrer" target="_blank">
+<span>consumerhelpline.gov.in</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 shrink-0 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">3</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary">e-Daakhil Online Filing</h4>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Govt Portal</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+            File an official petition from your phone through the official e-Daakhil portal. <strong class="text-primary">No advocate is required</strong> for claims under ₹5 Lakhs, and nominal digital fees apply.
+          </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 shrink-0 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">4</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary">District Commission Hearing</h4>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Statutory Forum</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+            If informal mediation stalls, the District Commission adjudicates binding financial compensations, order refunds, punitive damages, and legal costs.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Interactive Evidence Checklist -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3" id="checklist-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Evidence Checklist</h3>
+</div>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed" id="checklist-counter">0/4 Ready</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm">
+      Gather these four essential proof pieces before registering any grievance on NCH or e-Daakhil:
+    </p>
+<!-- Checklist interactive items -->
+<div class="space-y-2 pt-1" id="interactive-checklist">
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-colors active:bg-surface-container">
+<input class="checklist-item mt-1 w-5 h-5 rounded accent-secondary cursor-pointer shrink-0" onchange="updateChecklist()" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-lg text-label-lg text-primary block">Tax Invoice or Cash Memo</span>
+<span class="font-caption text-caption text-on-surface-variant block">Digital GST invoice, marketplace receipt (Amazon/Flipkart), or physical bill with seller details.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-colors active:bg-surface-container">
+<input class="checklist-item mt-1 w-5 h-5 rounded accent-secondary cursor-pointer shrink-0" onchange="updateChecklist()" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-lg text-label-lg text-primary block">Warranty / Guarantee Card</span>
+<span class="font-caption text-caption text-on-surface-variant block">Manufacturer warranty card, terms booklet, or policy screenshot displaying refund timeline.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-colors active:bg-surface-container">
+<input class="checklist-item mt-1 w-5 h-5 rounded accent-secondary cursor-pointer shrink-0" onchange="updateChecklist()" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-lg text-label-lg text-primary block">Defect Photos or Unboxing Video</span>
+<span class="font-caption text-caption text-on-surface-variant block">Timestamped high-resolution photos of damaged parts, broken seal, or video proof of non-functioning product.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-colors active:bg-surface-container">
+<input class="checklist-item mt-1 w-5 h-5 rounded accent-secondary cursor-pointer shrink-0" onchange="updateChecklist()" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-lg text-label-lg text-primary block">Written Communication Trail</span>
+<span class="font-caption text-caption text-on-surface-variant block">Screenshots of customer support chats, email exchanges, and brand’s refusal or non-response within deadline.</span>
+</div>
+</label>
+</div>
+<div class="hidden p-3 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center gap-2" id="checklist-success-banner">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span class="font-label-md text-label-md">All evidence collected! You are ready to submit on e-Daakhil.</span>
+</div>
+</section>
+<!-- Section 4: Official Redressal Channels -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Official Channels</h3>
+</div>
+<!-- Official Helpline Card -->
+<div class="p-3.5 rounded-lg bg-surface-container-low space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">phone_in_talk</span>
+<span class="font-title-md text-title-md text-primary">National Consumer Helpline</span>
+</div>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">MoCA, GoI</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+        Toll-free portal operating between 8:00 AM and 8:00 PM (Except National Holidays). Offers 12+ Indian regional languages.
+      </p>
+<div class="flex gap-2 pt-1">
+<a class="flex-1 min-h-[44px] py-2 px-3 rounded-lg bg-primary text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-98 transition-transform" href="tel:1915">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call 1915</span>
+</a>
+<a class="min-h-[44px] px-3.5 py-2 rounded-lg bg-surface-container text-primary flex items-center justify-center gap-1 font-label-md text-label-md active:scale-98 transition-transform" href="https://consumerhelpline.gov.in" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Portal</span>
+</a>
+</div>
+</div>
+<!-- e-Daakhil Commission Portal -->
+<div class="p-3.5 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">devices</span>
+<span class="font-title-md text-title-md text-primary">e-Daakhil Portal</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">NIC Hosted</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+        File statutory cases to District, State, and National Consumer Commissions without physical court visits.
+      </p>
+<a class="min-h-[44px] w-full py-2 px-3 rounded-lg bg-surface-container text-primary flex items-center justify-between font-label-md text-label-md active:scale-98 transition-transform" href="https://edaakhil.nic.in" rel="noopener noreferrer" target="_blank">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">link</span>
+<span>Visit edaakhil.nic.in</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- NCDRC Forum -->
+<div class="p-3.5 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">balance</span>
+<span class="font-title-md text-title-md text-primary">NCDRC Apex Forum</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Claims &gt; ₹2 Cr</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+        For high-value disputes, builder delays, and statutory appeals against state orders.
+      </p>
+<a class="min-h-[44px] w-full py-2 px-3 rounded-lg bg-surface-container text-primary flex items-center justify-between font-label-md text-label-md active:scale-98 transition-transform" href="http://ncdrc.nic.in" rel="noopener noreferrer" target="_blank">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span>Access ncdrc.nic.in</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Section 5: Key Distinction Note (Civic Trust Banner) -->
+<div class="p-3.5 rounded-xl bg-surface-container-high text-on-surface space-y-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<h4 class="font-label-lg text-label-lg font-bold">Important Civic Distinction</h4>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">
+      LegalSaathi empowers you with statutory rights awareness and procedural guidance. LegalSaathi is not a government portal. All legally enforceable complaints must be filed on the official government systems (<strong class="text-primary">1915 NCH</strong> or <strong class="text-primary">e-Daakhil</strong>).
+    </p>
+</div>
+<!-- Section 6: Frequently Asked Questions (Accordion) -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">quiz</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Frequently Asked Questions</h3>
+</div>
+<div class="space-y-2" id="faq-container">
+<!-- FAQ 1 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<button class="min-h-[44px] w-full px-3.5 py-3 flex items-center justify-between text-left gap-2 text-primary font-label-lg text-label-lg" onclick="toggleFaq('faq-1')">
+<span>Can I file without a licensed lawyer?</span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3 pt-0 text-on-surface-variant font-body-sm text-body-sm" id="faq-1">
+          Yes. Under the Consumer Protection Act 2019, any complainant can represent themselves in person or through an authorized representative before the District Commission.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<button class="min-h-[44px] w-full px-3.5 py-3 flex items-center justify-between text-left gap-2 text-primary font-label-lg text-label-lg" onclick="toggleFaq('faq-2')">
+<span>What is the time limit for filing a claim?</span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3 pt-0 text-on-surface-variant font-body-sm text-body-sm" id="faq-2">
+          A complaint must be filed within <strong class="text-primary">2 years</strong> from the date on which the cause of action (defect, denial of refund, or deficient service) arose.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<button class="min-h-[44px] w-full px-3.5 py-3 flex items-center justify-between text-left gap-2 text-primary font-label-lg text-label-lg" onclick="toggleFaq('faq-3')">
+<span>Are e-commerce platforms like Amazon/Flipkart covered?</span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3 pt-0 text-on-surface-variant font-body-sm text-body-sm" id="faq-3">
+          Yes. The Consumer Protection (E-Commerce) Rules 2020 hold digital platforms accountable for counterfeit items, delayed refunds, and dark patterns in billing.
+        </div>
+</div>
+</div>
+</section>
+<!-- Related Topics Horizontal Cards -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Related Legal Guides</h3>
+<a class="text-secondary font-label-md text-label-md hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<a class="p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 active:scale-98 transition-transform" href="#">
+<div class="space-y-1.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">credit_card_off</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary leading-tight">Banking &amp; UPI Frauds</h4>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span>Explore</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 active:scale-98 transition-transform" href="#">
+<div class="space-y-1.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary leading-tight">Tenant Rights &amp; Rent Act</h4>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span>Explore</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Interactive JavaScript for micro-interactions -->
+<script>
+    function updateChecklist() {
+      const items = document.querySelectorAll('.checklist-item');
+      let checkedCount = 0;
+      items.forEach(item => {
+        if (item.checked) checkedCount++;
+      });
+      const counter = document.getElementById('checklist-counter');
+      const banner = document.getElementById('checklist-success-banner');
+      if (counter) {
+        counter.textContent = `${checkedCount}/${items.length} Ready`;
+      }
+      if (banner) {
+        if (checkedCount === items.length) {
+          banner.classList.remove('hidden');
+        } else {
+          banner.classList.add('hidden');
+        }
+      }
+    }
+
+    function toggleFaq(id) {
+      const element = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (element) {
+        const isHidden = element.classList.contains('hidden');
+        element.classList.toggle('hidden');
+        if (icon) {
+          icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+      }
+    }
+  </script>
+</div></main></body></html>
